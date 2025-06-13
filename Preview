@@ -1,0 +1,5 @@
+git clone https://github.com/<Cipuyy>/<Cipuyy.github.io>.git
+cd <Cipuyy.github.io>
+git add .
+git commit -m "Upload website"
+git push
