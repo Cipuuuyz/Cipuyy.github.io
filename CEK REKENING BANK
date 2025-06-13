@@ -99,6 +99,7 @@
                     <option value="ovo">OVO</option>
                     <option value="gopay">GoPay</option>
                     <option value="dana">DANA</option>
+<option value="linkaja">LINKAJA</option>
                 </select>
             </div>
             <div class="form-group">
