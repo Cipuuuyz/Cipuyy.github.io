@@ -87,6 +87,8 @@
                     <option value="bca">BCA</option>
                     <option value="bri">BRI</option>
                     <option value="mandiri">Mandiri</option>
+
+value="BANK SYARIAH INDONESIA">BANK SYARIAH INDONESIA</option>
                 </select>
             </div>
             <div class="form-group" id="ewalletGroup" style="display: none;">
