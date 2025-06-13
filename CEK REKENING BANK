@@ -87,8 +87,10 @@
                     <option value="">-- Pilih Bank --</option>
                     <option value="bca">BCA</option>
                     <option value="bri">BRI</option>
-                    <option value="mandiri">Mandiri</option>
-                </select>
+                   <option value="mandiri">Mandiri</option>
+                   <option value="BSI">BSI</option>
+                   <option value="SEABANK">SEABANK</option>
+                 </select>
             </div>
             <div class="form-group" id="ewalletGroup" style="display: none;">
                 <label for="ewallet">E-Wallet:</label>
