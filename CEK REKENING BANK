@@ -1,0 +1,32 @@
+import requests
+
+def cek_nomor_rekening(bank_code, account_number, api_key):
+    # Contoh endpoint API validasi rekening (ganti dengan API resmi)
+    url = f"https://api-bank-contoh.com/v1/account/validate"
+    
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json"
+    }
+    
+    payload = {
+        "bank_code": bank_code,  # Kode bank (contoh: BCA, BRI, MANDIRI)
+        "account_number": account_number
+    }
+    
+    try:
+        response = requests.post(url, headers=headers, json=payload)
+        if response.status_code == 200:
+            return response.json()  # Contoh: {"valid": true, "account_name": "John Doe"}
+        else:
+            return {"error": "Gagal validasi rekening"}
+    except Exception as e:
+        return {"error": str(e)}
+
+# Contoh penggunaan
+bank_code = "BCA"  # Kode bank
+account_number = "1234567890"  # Nomor rekening
+api_key = "your_api_key_here"  # Dapatkan dari developer portal bank
+
+result = cek_nomor_rekening(bank_code, account_number, api_key)
+print(result)
